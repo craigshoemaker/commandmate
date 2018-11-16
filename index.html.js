@@ -87,5 +87,5 @@ const updateUI = () => {
     }
 
     localStorage.pairs = $pairs.value;
-    localStorage.content = content;
+    localStorage.content = $content.value;
 };
