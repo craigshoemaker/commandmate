@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CommandMate</title>
+        <meta name="description" content="">
+        <link rel="icon" type="image/png" href="fav-ico.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/bulma.min.css">
+        <link rel="stylesheet" href="styles/global.css">
+    </head>
+
+    <body class="container">
+        <div class="logo"><img src="command-mate-logo.png" alt="CommandMate"></div>
+        <div class="columns">
+            <div class="column">
+                <div>
+                    <textarea name="content" id="content" placeholder="commands" class="textarea" rows="3" onblur="updateUI(event);"></textarea>
+                </div>
+                <div><button class="button input has-text-grey-light" onclick="getKeysFromContent()"><i class="fas fa-arrow-down"></i></button></div>
+                <div>
+                    <textarea name="pairs" id="pairs" placeholder="key/value pairs" class="textarea" rows="12" onblur="updateUI(event);"></textarea>
+                </div>
+            </div>
+            <div class="column">
+                <div id="content-container"></div>
+            </div>
+        </div>
+        <footer class="has-text-centered has-text-grey-lighter is-text-size-6">by <a href="http://twitter.com/craigshoemaker" tabindex="-1" target="_blank">Craig Shoemaker</a> </footer>
+    </body>
+    <script type="text/javascript" src="index.html.js"></script>
+
+</html>
